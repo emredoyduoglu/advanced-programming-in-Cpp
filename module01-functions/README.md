@@ -82,3 +82,21 @@ You can add as many parameters as you want, just separate them with a comma:</p>
 </span>    <span class="javakeywordcolor" style="color:mediumblue">void</span> <em>functionName</em>(<em>parameter1</em>, <em>parameter2</em>, <em>parameter3</em>) {<br>&nbsp; <span class="javanumbercolor" style="color:red">
 </span>  <span class="commentcolor" style="color:green">// code to be executed<br></span>}<br><span class="javanumbercolor" style="color:red">
 </span>  </span>
+
+<h2>Default Parameter Value</h2>
+<p>You can also use a default parameter value, by using the equals sign (<code class="w3-codespan">=</code>).
+</p>
+<p>If we call the function without an argument, it uses the default value ("Norway"):</p>
+
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction(<strong>string country = <span class="javastringcolor" style="color:brown">"Norway"</span></strong>) {<br>&nbsp; cout <span class="javanumbercolor" style="color:red">
+</span>  &lt;&lt; country &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br>}<br><span class="javanumbercolor" style="color:red">
+</span>  <br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; myFunction(<span class="javastringcolor" style="color:brown">"Sweden"</span>);<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  myFunction(<span class="javastringcolor" style="color:brown">"India"</span>);<br>&nbsp; <strong>myFunction();</strong><br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  myFunction(<span class="javastringcolor" style="color:brown">"USA"</span>);<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="commentcolor" style="color:green">// Sweden<br></span><span class="commentcolor" style="color:green">// 
+  India<br></span><span class="commentcolor" style="color:green">// Norway<br></span><span class="commentcolor" style="color:green">// USA<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span>
+
+<p>A parameter with a default value, is often known as an "<strong>optional parameter</strong>". From the example above, 
+<code class="w3-codespan">country</code> is an optional parameter and <code class="w3-codespan">"Norway"</code> is the default value.</p>
+
