@@ -88,3 +88,49 @@ array:</p>
 </div>
 
 <hr>
+
+<h2>Omit Array Size</h2>
+<p>You don't have to specify the size of the array. But if you don't, it will 
+only be as big as the 
+elements that are inserted into it:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string cars[] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>}; <span class="commentcolor" style="color:green">// 
+  size of array is always 3<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+</div>
+<p>This is completely fine. However, the problem arise if you want extra space 
+for future elements. 
+Then you have to overwrite the existing values:</p>
+<div class="w3-example">
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <s>string cars[] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>};</s><br>string cars[] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>, <span class="javanumbercolor" style="color:red">
+</span>  <span class="javastringcolor" style="color:brown">"Mazda"</span>, <span class="javastringcolor" style="color:brown">"Tesla"</span>};<br><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+</div>
+
+<p>If you specify the size however, the array will reserve the extra space:</p>
+<div class="w3-example">
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string cars[<span class="javanumbercolor" style="color:red">5</span>] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>}; <span class="commentcolor" style="color:green">// 
+  size of array is 5, even though it's only three elements inside it<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+</div>
+<p>Now you can add a fourth and fifth element without overwriting the others:</p>
+<div class="w3-example">
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  cars[<span class="javanumbercolor" style="color:red">3</span>] = <span class="javastringcolor" style="color:brown">"Mazda"</span>;<br>cars[<span class="javanumbercolor" style="color:red">4</span>] = <span class="javastringcolor" style="color:brown">"Tesla"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+
+</div>
+<hr>
+
+<h2>Omit Elements on Declaration</h2>
+<p>It is also possible to declare an array without specifying the elements on declaration, and add them later:</p>
+<div class="w3-example">
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string cars[<span class="javanumbercolor" style="color:red">5</span>];<br>cars[<span class="javanumbercolor" style="color:red">0</span>] = <span class="javastringcolor" style="color:brown">"Volvo"</span>;<br>cars[<span class="javanumbercolor" style="color:red">1</span>] = <span class="javastringcolor" style="color:brown">"BMW"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  .<span class="javapropertycolor" style="color:black"></span>.<span class="javapropertycolor" style="color:black"></span>.<span class="javapropertycolor" style="color:black"></span> </span></div>
+
+</div>
