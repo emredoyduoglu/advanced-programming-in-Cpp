@@ -165,4 +165,43 @@ number, and use single quotes:</p>
 </span>  </span></div>
 
 </div>
+
+<hr>
+
+<h2>User Input Strings</h2>
+
+<p>It is possible to use the extraction operator <code class="w3-codespan">&gt;&gt;</code> on <code class="w3-codespan">cin</code> to display a string entered by a user:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string firstName;<br>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Type your first name: "</span>; <br>cin &gt;&gt; <span class="javanumbercolor" style="color:red">
+</span>  firstName; <span class="javanumbercolor" style="color:red">
+</span>  <span class="commentcolor" style="color:green">// get user input from the keyboard<br></span>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Your name is: "</span> &lt;&lt; <span class="javanumbercolor" style="color:red">
+</span>  firstName;<br><br><strong><span class="commentcolor" style="color:green">// Type your first name: John</span></strong><br></span><strong><span class="commentcolor" style="color:green">// Your name is: John</span></strong> </div>
+
+</div>
+
+<p>However, <code class="w3-codespan">cin</code> considers a space (whitespace, tabs, etc) as a terminating 
+character, which means that it can only display a single word (even if you type 
+many words):</p>
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh w3-border-red"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string fullName;<br>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Type your full name: "</span>; <br>cin &gt;&gt; <span class="javanumbercolor" style="color:red">
+</span>  fullName;<br>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Your name is: "</span> &lt;&lt; <span class="javanumbercolor" style="color:red">
+</span>  fullName;<br><br><strong><span class="commentcolor" style="color:green">// Type your full name: John Doe<br></span><span class="commentcolor" style="color:green">// Your name is: John</span></strong> </span></div>
+
+</div>
+
+<p>From the example above, you would expect the program to print "John Doe", but it only prints "John".<br><br> That's why, when working with strings, we often use the <code class="w3-codespan">getline()</code> 
+function to read a line of text. It takes <code class="w3-codespan">cin</code> as the first parameter, and the string 
+variable as second:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string fullName;<br>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Type your full name: "</span>; <br><span class="javanumbercolor" style="color:red">
+</span>  getline (cin, fullName);<br>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Your name is: "</span> &lt;&lt; <span class="javanumbercolor" style="color:red">
+</span>  fullName;<br><br><span class="commentcolor" style="color:green">// Type your full name: John Doe<br></span><span class="commentcolor" style="color:green">// Your name is: John Doe </span></span></div>
+
+</div>
 <hr>
