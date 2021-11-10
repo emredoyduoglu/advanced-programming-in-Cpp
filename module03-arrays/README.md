@@ -36,3 +36,28 @@ comma-separated list, inside curly braces:</p>
 </span>  cout &lt;&lt; cars[<span class="javanumbercolor" style="color:red">0</span>];<br><span class="commentcolor" style="color:green">// Outputs Volvo<br></span><span class="javanumbercolor" style="color:red">
 </span>  </span></div>
 </div>
+
+<p><strong>Note:</strong> Array indexes start with 0: [0] is the first element. [1] is the second 
+element, etc.</p>
+
+<hr>
+<h2>Change an Array Element</h2>
+
+<p>To change the value of a specific element, refer to the index number:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  cars[<span class="javanumbercolor" style="color:red">0</span>] = <span class="javastringcolor" style="color:brown">"Opel"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string cars[<span class="javanumbercolor" style="color:red">4</span>] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>, <span class="javastringcolor" style="color:brown">"Mazda"</span>};<br>cars[<span class="javanumbercolor" style="color:red">0</span>] = <span class="javastringcolor" style="color:brown">"Opel"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  cout &lt;&lt; cars[<span class="javanumbercolor" style="color:red">0</span>];<br><span class="javanumbercolor" style="color:red">
+</span>  <span class="commentcolor" style="color:green">// Now outputs Opel instead of Volvo<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+
+</div>
+<hr>
