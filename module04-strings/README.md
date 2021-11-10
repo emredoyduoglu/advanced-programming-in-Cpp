@@ -19,3 +19,41 @@ code, the <code class="w3-codespan">&lt;string&gt;</code> library:</p>
 
 <hr>
 
+<h2>String Concatenation</h2>
+
+<p>The <code class="w3-codespan">+</code> operator can be used between strings to add them together to make a new 
+string. This is called <strong>concatenation</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string firstName = <span class="javastringcolor" style="color:brown">"John "</span>;<br>string lastName = <span class="javastringcolor" style="color:brown">"Doe"</span>;<br>string fullName = <span class="javanumbercolor" style="color:red">
+</span>  firstName + lastName;<br>cout &lt;&lt; fullName; </span></div>
+
+</div>
+<p>In the example above, we added a space after firstName to create a space 
+between John and Doe on output. However, you could also add a space with quotes (<code class="w3-codespan">" "</code> or <code class="w3-codespan">' '</code>):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string firstName = <span class="javastringcolor" style="color:brown">"John"</span>;<br>string lastName = <span class="javastringcolor" style="color:brown">"Doe"</span>;<br>string fullName = <span class="javanumbercolor" style="color:red">
+</span>  firstName + <span class="javastringcolor" style="color:brown">" "</span> + lastName;<br>cout &lt;&lt; fullName; </span></div>
+
+</div>
+<hr>
+
+<h2>Append</h2>
+<p>A string in C++ is actually an object, which contain functions that can perform certain operations on strings. For example, you can also concatenate strings with the <code class="w3-codespan">append()</code> function:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string firstName = <span class="javastringcolor" style="color:brown">"John "</span>;<br>string lastName = <span class="javastringcolor" style="color:brown">"Doe"</span>;<br>string fullName = <span class="javanumbercolor" style="color:red">
+</span>  firstName.<span class="javapropertycolor" style="color:black">append</span>(lastName);<br>cout &lt;&lt; fullName; </span></div>
+
+</div>
+
+<div class="w3-note w3-panel">
+<p>It is up to you whether you want to use <code class="w3-codespan">+</code> or <code class="w3-codespan">append()</code>. The major difference between the two, is that the <code class="w3-codespan">append()</code> function is much faster. However, for testing and such, it might be easier to just use <code class="w3-codespan">+</code>.</p>
+</div>
+
+<hr>
+
