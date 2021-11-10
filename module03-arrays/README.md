@@ -61,3 +61,30 @@ element, etc.</p>
 
 </div>
 <hr>
+<h2>Loop Through an Array</h2>
+<p>You can loop through the array elements with the <code class="w3-codespan">for</code> 
+loop.</p>
+<p>The following example outputs all elements in the <strong>cars</strong> 
+array:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string cars[<span class="javanumbercolor" style="color:red">4</span>] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>, <span class="javastringcolor" style="color:brown">"Mazda"</span>};<br><span class="javakeywordcolor" style="color:mediumblue">for</span>(<span class="javakeywordcolor" style="color:mediumblue">int</span> i = <span class="javanumbercolor" style="color:red">0</span>; i &lt; <span class="javanumbercolor" style="color:red">4</span>; <span class="javanumbercolor" style="color:red">
+</span>  i++) {<br>&nbsp; cout &lt;&lt; cars[i] &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br>}<br><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+
+</div>
+
+<p>The following example outputs the index of each element together with its value:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string cars[<span class="javanumbercolor" style="color:red">4</span>] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>, <span class="javastringcolor" style="color:brown">"Mazda"</span>};<br><span class="javakeywordcolor" style="color:mediumblue">for</span>(<span class="javakeywordcolor" style="color:mediumblue">int</span> i = <span class="javanumbercolor" style="color:red">0</span>; i &lt; <span class="javanumbercolor" style="color:red">4</span>; <span class="javanumbercolor" style="color:red">
+</span>  i++) {<br>&nbsp; cout &lt;&lt; i &lt;&lt; <span class="javastringcolor" style="color:brown">": "</span> &lt;&lt; cars[i] &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br>}<br><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+
+</div>
+
+<hr>
