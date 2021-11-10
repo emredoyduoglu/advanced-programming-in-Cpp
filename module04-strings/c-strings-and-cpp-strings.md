@@ -40,7 +40,33 @@ string. The C library header file <code>&lt;cstring&gt;</code> contains a number
 
 <p>The following diagram shows how the string <code>name</code> is represented in memory:</p>
 
-<p><img src="../Images/cstring.gif" alt="Array-based C string"><br>
+<p>
+   <table>
+      <tr>
+         <td>
+            K
+         </td>
+         <td>
+            a
+         </td>
+         <td>
+            r
+         </td>
+         <td>
+            e
+         </td>
+         <td>
+            n
+         </td>
+         <td>
+            \0
+         </td>
+         <td>
+            
+         </td>
+      </tr>
+   </table>
+</p>
 
 <p>The individual characters that make up the string are stored in the elements of the array. The string is terminated by a null character. Array elements after the null character are not part of the string, and their contents are irrelevant.</p>
 
