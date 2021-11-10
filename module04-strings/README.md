@@ -205,3 +205,22 @@ variable as second:</p>
 
 </div>
 <hr>
+
+
+<h2>Omitting Namespace</h2>
+<p>You might see some C++ programs that runs without the standard namespace library. The <code class="w3-codespan">using namespace std</code> line can be omitted and replaced with the <code class="w3-codespan">std</code> keyword, 
+followed by the <code class="w3-codespan">::</code> operator 
+for <code class="w3-codespan">string</code> (and <code class="w3-codespan">cout</code>) objects:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  #include &lt;iostream&gt;<br>#include &lt;string&gt;<br><br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp;<span class="javanumbercolor" style="color:red">
+</span>  <strong>std::</strong>string greeting = <span class="javastringcolor" style="color:brown">"Hello"</span>;<br>&nbsp; <strong>std::</strong>cout <span class="javanumbercolor" style="color:red">
+</span>  &lt;&lt; greeting;<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>} </span></div>
+
+</div>
+<div class="w3-note w3-panel">
+<p>It is up to you if you want to include the standard namespace library or not.</p>
+</div>
+<hr>
