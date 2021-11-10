@@ -57,3 +57,41 @@ between John and Doe on output. However, you could also add a space with quotes 
 
 <hr>
 
+<h2>Adding Numbers and Strings</h2>
+<div class="w3-panel w3-warning">
+<p>WARNING!</p>
+ <p>C++ uses the <code class="w3-codespan">+</code> operator for both <strong>addition</strong> and 
+ <strong>concatenation</strong>.</p>
+ <p>Numbers are added. Strings are concatenated.</p>
+</div>
+<p>If you add two numbers, the result will be a number:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> x = <span class="javanumbercolor" style="color:red">10</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> y = <span class="javanumbercolor" style="color:red">20</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> z = x + y;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="commentcolor" style="color:green">// z will be 30 (an integer)
+ </span></span></div>
+
+</div>
+
+<p>If you add two strings, the result will be a string concatenation:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string x = <span class="javastringcolor" style="color:brown">"10"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  string y = <span class="javastringcolor" style="color:brown">"20"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  string z = x + y;&nbsp;&nbsp; <span class="commentcolor" style="color:green">// z will be 1020 (a string)
+ </span></span></div>
+
+</div>
+
+<p>If you try to add a number to a string, an error occurs:</p>
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh w3-border-red"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string x = <span class="javastringcolor" style="color:brown">"10"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> y = <span class="javanumbercolor" style="color:red">20</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  string z = x + y; </span></div>
+</div>
+<hr>
