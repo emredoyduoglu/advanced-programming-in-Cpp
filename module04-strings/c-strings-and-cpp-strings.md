@@ -40,7 +40,7 @@ string. The C library header file <code>&lt;cstring&gt;</code> contains a number
 
 <p>The following diagram shows how the string <code>name</code> is represented in memory:</p>
 
-<p>
+<p>name
    <table>
       <tr>
          <td>
