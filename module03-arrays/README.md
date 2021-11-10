@@ -35,5 +35,4 @@ comma-separated list, inside curly braces:</p>
 </span>  string cars[<span class="javanumbercolor" style="color:red">4</span>] = {<span class="javastringcolor" style="color:brown">"Volvo"</span>, <span class="javastringcolor" style="color:brown">"BMW"</span>, <span class="javastringcolor" style="color:brown">"Ford"</span>, <span class="javastringcolor" style="color:brown">"Mazda"</span>};<br><span class="javanumbercolor" style="color:red">
 </span>  cout &lt;&lt; cars[<span class="javanumbercolor" style="color:red">0</span>];<br><span class="commentcolor" style="color:green">// Outputs Volvo<br></span><span class="javanumbercolor" style="color:red">
 </span>  </span></div>
-<a target="_blank" class="w3-btn w3-margin-bottom" href="trycpp.asp?filename=demo_array">Try it Yourself »</a>
 </div>
