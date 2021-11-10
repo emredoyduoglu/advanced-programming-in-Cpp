@@ -127,3 +127,42 @@ keyword inside the function:</p>
   8 (5 + 3)<br></span><span class="javanumbercolor" style="color:red">
 </span>  </span>
 
+<h2>Pass By Reference</h2>
+<p>In the examples from the previous page, we used normal variables when we passed parameters to 
+a function. You can also pass a <a href="cpp_references.asp">reference</a> to 
+the function. This can be useful when you need to change the value of the arguments:</p>
+
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>    <span class="javakeywordcolor" style="color:mediumblue">void</span> swapNums(<span class="javakeywordcolor" style="color:mediumblue">int</span> &amp;x, <span class="javakeywordcolor" style="color:mediumblue">int</span> &amp;y) {<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">int</span> z = x;<br>&nbsp; x = y;<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>    y = z;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>    <span class="javakeywordcolor" style="color:mediumblue">int</span> firstNum = <span class="javanumbercolor" style="color:red">10</span>;<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">int</span> secondNum = <span class="javanumbercolor" style="color:red">20</span>;<br><br>&nbsp; cout &lt;&lt; <span class="javanumbercolor" style="color:red">
+</span>    <span class="javastringcolor" style="color:brown">"Before swap: "</span> &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br>&nbsp; cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br><span class="javanumbercolor" style="color:red">
+</span>    <br>&nbsp; <span class="commentcolor" style="color:green">// Call the function, which will change the values of firstNum 
+    and secondNum<br></span>&nbsp; swapNums(firstNum, secondNum);<br><br>&nbsp; cout &lt;&lt; <span class="javastringcolor" style="color:brown">"After swap: 
+    "</span> &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br>&nbsp; cout &lt;&lt; firstNum &lt;&lt; secondNum &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br><br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>    <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><span class="javanumbercolor" style="color:red">
+</span>  </span>
+
+<h2>Function Overloading</h2>
+<p>With<strong> function overloading</strong>, multiple functions can have the same name with different
+parameters:</p>
+
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> myFunction(<span class="javakeywordcolor" style="color:mediumblue">int</span> x)<br><span class="javakeywordcolor" style="color:mediumblue">float</span> myFunction(<span class="javakeywordcolor" style="color:mediumblue">float</span> x)<br><span class="javakeywordcolor" style="color:mediumblue">double</span> <span class="javanumbercolor" style="color:red">
+</span>  myFunction(<span class="javakeywordcolor" style="color:mediumblue">double</span> x, <span class="javakeywordcolor" style="color:mediumblue">double</span> y)<br><span class="javanumbercolor" style="color:red">
+</span>  </span>
+
+<p>Consider the following example, which have two functions that add numbers of different type:</p>
+<p>Instead of defining two functions that should do the same thing, it is better to overload one. </p>
+<p>In the example below, we overload the <code class="w3-codespan">plusFunc</code> function to work for both <code class="w3-codespan">int</code> 
+and <code class="w3-codespan">double</code>:</p>
+
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> plusFunc(<span class="javakeywordcolor" style="color:mediumblue">int</span> x, <span class="javakeywordcolor" style="color:mediumblue">int</span> <span class="javanumbercolor" style="color:red">
+</span>  y) {<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> x + y;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">double</span> plusFunc(<span class="javakeywordcolor" style="color:mediumblue">double</span> x, <span class="javakeywordcolor" style="color:mediumblue">double</span> y) {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">return</span> x + y;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">int</span> myNum1 = plusFunc(<span class="javanumbercolor" style="color:red">8</span>, <span class="javanumbercolor" style="color:red">
+</span>  <span class="javanumbercolor" style="color:red">5</span>);<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">double</span> myNum2 = plusFunc(<span class="javanumbercolor" style="color:red">4.3</span>, <span class="javanumbercolor" style="color:red">6.26</span>);<br>&nbsp; cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Int: "</span> &lt;&lt; <span class="javanumbercolor" style="color:red">
+</span>  myNum1 &lt;&lt; <span class="javastringcolor" style="color:brown">"\n"</span>;<br>&nbsp; cout &lt;&lt; <span class="javastringcolor" style="color:brown">"Double: "</span> &lt;&lt; myNum2;<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><span class="javanumbercolor" style="color:red">
+</span>  </span>
+
+
