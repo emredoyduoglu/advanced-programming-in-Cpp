@@ -118,3 +118,51 @@ just an alias of <code class="w3-codespan">length()</code>. It is completely up 
 </div>
 <hr>
 
+<h2>Access Strings</h2>
+<p>You can access the characters in a string by referring to its index number 
+inside square brackets <code class="w3-codespan">[]</code>.</p>
+<p>This example prints the <strong>first character</strong> in 
+<strong>myString</strong>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string <span class="javanumbercolor" style="color:red">
+</span>  myString = <span class="javastringcolor" style="color:brown">"Hello"</span>;<br>cout &lt;&lt; myString[<span class="javanumbercolor" style="color:red">0</span>];<br><span class="commentcolor" style="color:green">// Outputs H<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+
+</div>
+
+<div class="w3-note w3-panel">
+<p><strong>Note:</strong> String indexes start with 0: [0] is the first character. [1] is the second 
+character, etc.</p>
+</div>
+
+<p>This example prints the <strong>second character</strong> in 
+<strong>myString</strong>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string <span class="javanumbercolor" style="color:red">
+</span>  myString = <span class="javastringcolor" style="color:brown">"Hello"</span>;<br>cout &lt;&lt; myString[<span class="javanumbercolor" style="color:red">1</span>];<br><span class="commentcolor" style="color:green">// Outputs e<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+
+</div>
+
+<hr>
+
+<h2>Change String Characters</h2>
+<p>To change the value of a specific character in a string, refer to the index 
+number, and use single quotes:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string <span class="javanumbercolor" style="color:red">
+</span>  myString = <span class="javastringcolor" style="color:brown">"Hello"</span>;<br>myString[<span class="javanumbercolor" style="color:red">0</span>] = <span class="javastringcolor" style="color:brown">'J'</span>;<br>cout &lt;&lt; myString;<br><span class="commentcolor" style="color:green">// 
+  Outputs Jello instead of Hello<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span></div>
+
+</div>
+<hr>
