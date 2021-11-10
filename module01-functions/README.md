@@ -60,3 +60,13 @@ and a semicolon <code class="w3-codespan">;</code></p>
 </span>  myFunction();<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
 </span>  cout &lt;&lt; <span class="javastringcolor" style="color:brown">"I just got executed!"</span>;<br>}<br><br><span class="commentcolor" style="color:green">// Error<br></span>
 
+<p>However, it is possible to separate the declaration and the definition of the function - for code optimization.</p>
+<p>You will often see C++ programs that have function declaration above <code class="w3-codespan">main()</code>, 
+and function definition below <code class="w3-codespan">main()</code>. This will make the code 
+better organized and easier to read:</p>
+
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <span class="commentcolor" style="color:green">// <strong>Function declaration</strong><br></span><span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction();<br><br><span class="commentcolor" style="color:green">// The main method<br></span><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  myFunction();&nbsp; <span class="commentcolor" style="color:green">// <strong>call</strong> the function<br></span>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="commentcolor" style="color:green">// <strong>Function definition</strong><br></span><span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  cout &lt;&lt; <span class="javastringcolor" style="color:brown">"I just got executed!"</span>;<br>}<br><span class="javanumbercolor" style="color:red">
+</span>  </span>
