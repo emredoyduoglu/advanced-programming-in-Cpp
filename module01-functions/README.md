@@ -22,7 +22,7 @@ create your own functions to perform certain actions. </p>
 <li><code class="w3-codespan">void</code> means that the function does not have a 
 return value. You will learn more about return values later in the next chapter</li>
 <li>inside the function (the body), add code that defines what the function should do</li>
-
+</ul>
 <h2>Call a Function</h2>
 <p>Declared functions are not executed immediately. They are "saved for later 
 use", and will be executed later, when they are called.</p>
