@@ -94,4 +94,27 @@ between John and Doe on output. However, you could also add a space with quotes 
 </span>  <span class="javakeywordcolor" style="color:mediumblue">int</span> y = <span class="javanumbercolor" style="color:red">20</span>;<br><span class="javanumbercolor" style="color:red">
 </span>  string z = x + y; </span></div>
 </div>
+
 <hr>
+
+<h2>String Length</h2>
+<p>To get the length of a string, use the <code class="w3-codespan">length()</code> function:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string txt = <span class="javastringcolor" style="color:brown">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>;<br>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"The length of the txt 
+  string is: "</span> &lt;&lt; txt.<span class="javapropertycolor" style="color:black">length</span>(); </span></div>
+
+</div>
+
+<p><strong>Tip:</strong> You might see some C++ programs that use the <code class="w3-codespan">size()</code> function to get the length of a string. This is 
+just an alias of <code class="w3-codespan">length()</code>. It is completely up to you if you want to use <code class="w3-codespan">length()</code> or <code class="w3-codespan">size()</code>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate javaHigh"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  string txt = <span class="javastringcolor" style="color:brown">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>;<br>cout &lt;&lt; <span class="javastringcolor" style="color:brown">"The length of the txt 
+  string is: "</span> &lt;&lt; txt.<span class="javapropertycolor" style="color:black">size</span>(); </span></div>
+
+</div>
+<hr>
+
