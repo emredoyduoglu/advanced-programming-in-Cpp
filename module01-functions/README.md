@@ -70,3 +70,15 @@ better organized and easier to read:</p>
 </span>  myFunction();&nbsp; <span class="commentcolor" style="color:green">// <strong>call</strong> the function<br></span>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="commentcolor" style="color:green">// <strong>Function definition</strong><br></span><span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
 </span>  cout &lt;&lt; <span class="javastringcolor" style="color:brown">"I just got executed!"</span>;<br>}<br><span class="javanumbercolor" style="color:red">
 </span>  </span>
+
+<hr>
+<h2>Parameters and Arguments</h2>
+<p>Information can be passed to functions as a parameter. Parameters act as 
+variables inside the function.</p>
+<p>Parameters are specified after the function name, inside the parentheses.
+You can add as many parameters as you want, just separate them with a comma:</p>
+
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>    <span class="javakeywordcolor" style="color:mediumblue">void</span> <em>functionName</em>(<em>parameter1</em>, <em>parameter2</em>, <em>parameter3</em>) {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  <span class="commentcolor" style="color:green">// code to be executed<br></span>}<br><span class="javanumbercolor" style="color:red">
+</span>  </span>
