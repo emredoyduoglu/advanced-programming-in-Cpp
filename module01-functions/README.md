@@ -35,4 +35,11 @@ and a semicolon <code class="w3-codespan">;</code></p>
 </span>  <strong>myFunction();</strong> <span class="commentcolor" style="color:green">// call the function<br></span>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="commentcolor" style="color:green">// Outputs 
   "I just got executed!"<br></span>
 
-A function can be called multiple times:
+<b>A function can be called multiple times:</b>
+
+<span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  cout &lt;&lt; <span class="javastringcolor" style="color:brown">"I just got executed!\n"</span>;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  <strong>myFunction();</strong><br>&nbsp; <strong>myFunction();</strong><br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  <strong>myFunction();</strong><br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="commentcolor" style="color:green">// 
+  I just got executed!<br></span><span class="commentcolor" style="color:green">// I just got executed!<br></span><span class="commentcolor" style="color:green">// I just got executed!<br></span>
+
