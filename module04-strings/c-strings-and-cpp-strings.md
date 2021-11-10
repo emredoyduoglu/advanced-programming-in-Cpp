@@ -67,6 +67,12 @@ string. The C library header file <code>&lt;cstring&gt;</code> contains a number
          <td>
             &nbsp;
          </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
       </tr>
    </table>
 </p>
@@ -75,7 +81,44 @@ string. The C library header file <code>&lt;cstring&gt;</code> contains a number
 
 <p>A "null string" is a string with a null character as its first character:</p>
 
-<p><img src="../Images/nullcstring.gif" alt="Null C string"><br>
+<p>name 
+   <p>name
+   <table>
+      <tr>
+         <td>
+            \0
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+      </tr>
+   </table>
+</p>
+</p>
 
 <p>The length of a null string is 0.</p>
 
@@ -87,7 +130,30 @@ string. The C library header file <code>&lt;cstring&gt;</code> contains a number
 
 <p>This declaration creates an unnamed character array just large enough to hold the string <code>"Karen"</code> (including room for the null character) and places the address of the first element of the array in the <code>char</code> pointer <code>name</code>:</p>
 
-<p><img src="../Images/ptrstring.gif" alt="Pointer-based C string"></p>
+<p>name
+   <table>
+      <tr>
+         <td>
+            K
+         </td>
+         <td>
+            a
+         </td>
+         <td>
+            r
+         </td>
+         <td>
+            e
+         </td>
+         <td>
+            n
+         </td>
+         <td>
+            \0
+         </td>
+      </tr>
+   </table>
+</p>
 
 <h3>Subscripting</h3>
 
@@ -263,14 +329,84 @@ a string object.</p>
    string name = "Karen";
 </pre>
 
-<p><img src="../Images/cppstring.gif" alt="C++ string"><br>
+<p>p -----> length:5, capacity: 10
+   <table>
+      <tr>
+         <td>
+            K
+         </td>
+         <td>
+            a
+         </td>
+         <td>
+            r
+         </td>
+         <td>
+            e
+         </td>
+         <td>
+            n
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+      </tr>
+   </table>
+</p>
 
 <code>name</code> is a <code>string</code> object with several data members. The data member <code>p</code> is a pointer to (contains the address of) the first character in a dynamically-allocated array of characters. The data member <code>length</code>
 contains the length of the string. The data member <code>capacity</code> contains the number of valid characters that may currently be stored in the array.</p>
 
 <p>A "null string" is a string with a <code>length</code> of 0:</p>
 
-<p><img src="../Images/nullcppstring.gif" alt="Null C string"><br>
+<p>p -----> length:5, capacity: 10
+   <table>
+      <tr>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+         <td>
+            &nbsp;
+         </td>
+      </tr>
+   </table>
+</p>
 
 <p>The length of a null string is 0.</p>
 
