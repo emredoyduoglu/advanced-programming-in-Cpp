@@ -100,3 +100,30 @@ You can add as many parameters as you want, just separate them with a comma:</p>
 <p>A parameter with a default value, is often known as an "<strong>optional parameter</strong>". From the example above, 
 <code class="w3-codespan">country</code> is an optional parameter and <code class="w3-codespan">"Norway"</code> is the default value.</p>
 
+
+<h2>Multiple Parameters</h2>
+<p>Inside the function, you can add as many parameters as you want:</p>
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>  <span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction(<strong>string fname, <span class="javakeywordcolor" style="color:mediumblue">int</span> age</strong>) {<br>&nbsp; cout &lt;&lt; fname &lt;&lt; <span class="javastringcolor" style="color:brown">" Refsnes. 
+  "</span> &lt;&lt; age &lt;&lt; <span class="javastringcolor" style="color:brown">" years old. \n"</span>;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; myFunction(<strong><span class="javastringcolor" style="color:brown">"Liam"</span>, 3</strong>);<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  myFunction(<strong><span class="javastringcolor" style="color:brown">"Jenny"</span>, 14</strong>);<br>&nbsp; myFunction(<strong><span class="javastringcolor" style="color:brown">"Anja"</span>, 30</strong>);<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br><span class="javanumbercolor" style="color:red">
+</span>  }<br><br><span class="commentcolor" style="color:green">// Liam Refsnes. 3 years old.<br></span><span class="commentcolor" style="color:green">// Jenny Refsnes. 14 years old.<br></span><span class="javanumbercolor" style="color:red">
+</span>  <span class="commentcolor" style="color:green">// Anja Refsnes. 30 years old.<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span>
+
+<p>Note that when you are working with multiple parameters, the function call must 
+have the same number of arguments as there are parameters, and the arguments must be passed in the same order.</p>
+
+<h2>Return Values</h2>
+<p>The <code class="w3-codespan">void</code> keyword, used in the previous examples, indicates that the 
+function should not return a value. If you 
+want the function to return a value, you can use a data type (such as <code class="w3-codespan">int</code>, 
+<code class="w3-codespan">string</code>, etc.) instead of <code class="w3-codespan">void</code>, and use the <code class="w3-codespan">return</code> 
+keyword inside the function:</p>
+<span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>    <strong><span class="javakeywordcolor" style="color:mediumblue">int</span></strong> myFunction(<span class="javakeywordcolor" style="color:mediumblue">int</span> x) {<br>&nbsp; <strong><span class="javakeywordcolor" style="color:mediumblue">return</span></strong> <span class="javanumbercolor" style="color:red">5</span> <span class="javanumbercolor" style="color:red">
+</span>    + x;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; cout &lt;&lt; myFunction(<span class="javanumbercolor" style="color:red">3</span>);<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>    <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="commentcolor" style="color:green">// Outputs 
+  8 (5 + 3)<br></span><span class="javanumbercolor" style="color:red">
+</span>  </span>
+
