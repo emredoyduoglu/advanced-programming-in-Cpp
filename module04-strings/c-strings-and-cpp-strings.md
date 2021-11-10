@@ -61,9 +61,6 @@ string. The C library header file <code>&lt;cstring&gt;</code> contains a number
          <td>
             \0
          </td>
-         <td>
-            
-         </td>
       </tr>
    </table>
 </p>
