@@ -371,7 +371,7 @@ contains the length of the string. The data member <code>capacity</code> contain
 
 <p>A "null string" is a string with a <code>length</code> of 0:</p>
 
-<p>p -----> length:5, capacity: 10
+<p>p -----> length:0, capacity: 10
    <table>
       <tr>
          <td>
