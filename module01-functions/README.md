@@ -43,3 +43,20 @@ and a semicolon <code class="w3-codespan">;</code></p>
 </span>  <strong>myFunction();</strong><br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="commentcolor" style="color:green">// 
   I just got executed!<br></span><span class="commentcolor" style="color:green">// I just got executed!<br></span><span class="commentcolor" style="color:green">// I just got executed!<br></span>
 
+<h2>Function Declaration and Definition</h2>
+<p>A C++ function consist of two parts:</p>
+<ul>
+<li><strong>Declaration:</strong> the function's name, return type, and parameters (if any)</li>
+<li><strong>Definition:</strong> the body of the function (code to be executed)</li>
+</ul>
+
+<span class="javakeywordcolor" style="color:mediumblue">void</span> <strong>myFunction()</strong> { <span class="commentcolor" style="color:green">// <strong>declaration</strong><br></span>&nbsp; <span class="commentcolor" style="color:green">// 
+    the body of the function (<strong>definition</strong>)<br></span>}
+
+<p><strong>Note:</strong> If a user-defined function, such as <code class="w3-codespan">myFunction()</code> is declared after the <code class="w3-codespan">main()</code> function, 
+<strong>an error will occur</strong>:</p>
+
+<span class="javakeywordcolor" style="color:mediumblue">int</span> main() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  myFunction();<br>&nbsp; <span class="javakeywordcolor" style="color:mediumblue">return</span> <span class="javanumbercolor" style="color:red">0</span>;<br>}<br><br><span class="javakeywordcolor" style="color:mediumblue">void</span> myFunction() {<br>&nbsp; <span class="javanumbercolor" style="color:red">
+</span>  cout &lt;&lt; <span class="javastringcolor" style="color:brown">"I just got executed!"</span>;<br>}<br><br><span class="commentcolor" style="color:green">// Error<br></span>
+
